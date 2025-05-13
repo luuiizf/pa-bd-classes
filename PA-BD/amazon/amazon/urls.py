@@ -27,6 +27,12 @@ router = DefaultRouter()
 router.register(r'clientes', views.ClienteViewSet)
 router.register(r'itens', views.ItemViewSet)
 router.register(r'enderecos', views.EnderecoViewSet)
+router.register(r'vendedores', views.VendedorViewSet)
+router.register(r'formas_pagamento', views.FormaPagamentoViewSet)
+router.register(r'pedidos', views.PedidoViewSet)
+router.register(r'pedido_itens', views.PedidoItemViewSet)
+router.register(r'perfis', views.PerfilViewSet)
+
 
 schema_view = get_schema_view(
     openapi.Info(
