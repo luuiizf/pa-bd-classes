@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Cliente, Item
+from .models import Cliente, Item, Endereco
 
 class ClienteSerializer(serializers.ModelSerializer):
     class Meta:
@@ -10,3 +10,9 @@ class ItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
         fields = '__all__'
+
+class EnderecoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Endereco
+        fields = '__all__'
+
